@@ -25,4 +25,7 @@ end
 
 def turn()
   
+  input = gets.strip
+  input = input_to_index(input)
+  
 end
