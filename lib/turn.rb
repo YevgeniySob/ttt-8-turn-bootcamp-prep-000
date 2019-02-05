@@ -23,7 +23,7 @@ def move(board, position, char = "X")
   board[position] = char
 end
 
-def turn()
+def turn(board)
   
   input = gets.strip
   input = input_to_index(input)
@@ -31,7 +31,7 @@ def turn()
     move(board,input,"X")
   else
     puts "Wrong input. try 1-9"
-    turn()
+    turn(board)
   end
   
 end
