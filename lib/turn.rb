@@ -27,7 +27,7 @@ def turn(board)
   
   input = gets.strip
   input = input_to_index(input)
-  if(valid_move(board,input))
+  if(valid_move?(board,input))
     move(board,input,"X")
   else
     puts "Wrong input. try 1-9"
